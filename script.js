@@ -9,7 +9,7 @@ pale.addEventListener('click', pale_Generator);
 facto.addEventListener('click',factorial_Of);
 
 
-
+//This function generates a random password with a random length between 8-11 characters long.
 function pass_Genereator(){
 var password = [];
 var randomLength = Math.floor(Math.random() * (11-8)) + 8;
@@ -20,7 +20,7 @@ for(let i=0; i < randomLength; i++){
 console.log("The random password with length ",randomLength," is: ",password.join(''));
 }
 
-
+//This function calculate a factorial of any number from the user.
 function factorial_Of(){
 var num = parseInt(prompt("Factorial of "));
 ans = 1;
@@ -30,6 +30,7 @@ for (let i = 1; i <= num; i++) {
 console.log("factorial of ",num," is:",ans);
 }
 
+//This function generates the a febonacci sequence up to any number given by the user.
 
 function febo_Generator(){
     var febo_seq = [0,1];
@@ -47,6 +48,7 @@ function febo_Generator(){
     console.log("Febonacci:",febo_seq.toString());
 }
 
+// This function generates the first n palendromic sequence.
 
 function pale_Generator(){
     var pale_seq= [] , i = 0;
@@ -68,7 +70,7 @@ function pale_Generator(){
     console.log("Palendrome: ",pale_seq.toString());
 }
 
-
+//This function checkes whether i is palendrome or not.
 function is_palindrome(i){
     var reversed = 0, remainder, original;
     var num =  parseInt(i);
